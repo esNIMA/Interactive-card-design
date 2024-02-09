@@ -1,0 +1,215 @@
+@keyframes error-animation {
+  0% {
+    transform: translateX(-15%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+.forms {
+  width: 40rem;
+  margin-left: 20rem;
+  margin-top: 30rem;
+  font-size: 1.8rem;
+  @media (max-width: 1350px) {
+    margin-left: 10rem;
+  }
+  @media (max-width: 1200px) {
+    margin-left: 5rem;
+  }
+  @media (max-width: 950px) {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+  }
+  @media (max-width: 450px) {
+    padding-left: 2rem;
+  }
+  @media (max-width: 320px) {
+    padding-left: 0rem;
+  }
+
+  &--name {
+    &__error {
+      padding-left: 0.5rem;
+      width: 30rem;
+      height: 4rem;
+      border-radius: 1rem;
+      font-size: 1.7rem;
+      animation: error-animation 90ms ease-in;
+      border-color: $color-red;
+      &-text {
+        padding: 0.5rem;
+        color: $color-red;
+        font-size: 1.2rem;
+      }
+    }
+    &__no-error {
+      display: none;
+    }
+    &__input {
+      padding-left: 0.5rem;
+      width: 30rem;
+      height: 4rem;
+      border-radius: 1rem;
+      font-size: 1.7rem;
+      border-color: $color-light-grayish-violet;
+
+      &:focus {
+        outline: none;
+        border-width: 3px;
+        border-radius: 3rem;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          45deg,
+          hsl(249, 99%, 64%),
+          hsl(278, 94%, 30%)
+        );
+      }
+    }
+  }
+  &--card-number {
+    &__error {
+      font-size: 1.7rem;
+      width: 7rem;
+      height: 4rem;
+      border-radius: 1rem;
+      padding-left: 0.5rem;
+      animation: error-animation 90ms ease-in;
+      border-color: $color-red;
+      &-text {
+        padding: 0.5rem;
+        color: $color-red;
+        font-size: 1.2rem;
+      }
+    }
+    &__no-error {
+      display: none;
+    }
+    &__input {
+      font-size: 1.7rem;
+      width: 7rem;
+      height: 4rem;
+      border-radius: 1rem;
+      padding-left: 0.5rem;
+      border-color: $color-light-grayish-violet;
+      &:nth-last-child(3) {
+        margin-left: 0.3rem;
+      }
+      &:nth-last-child(2) {
+        margin-left: 0.3rem;
+      }
+      &:nth-last-child(1) {
+        margin-left: 0.3rem;
+      }
+      transition: border-image-source 5s;
+      &:focus {
+        outline: none;
+        border-width: 3px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          45deg,
+          hsl(249, 99%, 64%),
+          hsl(278, 94%, 30%)
+        );
+      }
+    }
+  }
+  &--expire {
+    &__error {
+      font-size: 1.7rem;
+      padding-left: 0.5rem;
+      width: 7rem;
+      height: 4rem;
+      border-radius: 1rem;
+      animation: error-animation 90ms ease-in;
+      border-color: $color-red;
+      &-text {
+        padding: 0.5rem;
+        color: $color-red;
+        font-size: 1.2rem;
+      }
+    }
+    &__no-error {
+      display: none;
+    }
+    font-size: 1.2rem;
+    // display: inline-block;
+    &__input {
+      font-size: 1.7rem;
+      padding-left: 0.5rem;
+      width: 7rem;
+      height: 4rem;
+      border-radius: 1rem;
+      border-color: $color-light-grayish-violet;
+      &:focus {
+        outline: none;
+        border-width: 3px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          45deg,
+          hsl(249, 99%, 64%),
+          hsl(278, 94%, 30%)
+        );
+      }
+    }
+  }
+  &--cvc {
+    &__error {
+      font-size: 1.7rem;
+      padding-left: 0.5rem;
+      width: 12rem;
+      height: 4rem;
+      border-radius: 1rem;
+      animation: error-animation 90ms ease-in;
+      border-color: $color-red;
+      &-text {
+        padding: 0.5rem;
+        color: $color-red;
+        font-size: 1.2rem;
+      }
+    }
+    &__no-error {
+      display: none;
+    }
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    &__input {
+      font-size: 1.7rem;
+      padding-left: 0.5rem;
+      width: 12rem;
+      height: 4rem;
+      border-radius: 1rem;
+      border-color: $color-light-grayish-violet;
+      &:focus {
+        outline: none;
+        border-width: 3px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          45deg,
+          hsl(249, 99%, 64%),
+          hsl(278, 94%, 30%)
+        );
+      }
+    }
+  }
+  &--button {
+    color: $color-white;
+    border-color: $color-very-dark-violet;
+    background-color: $color-very-dark-violet;
+    width: 30rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    transition: all 5ms;
+    &:active {
+      transform: scale(0.95);
+      background-color: hsl(278, 94%, 30%);
+    }
+  }
+}

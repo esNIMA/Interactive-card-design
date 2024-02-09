@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  overflow-y: hidden;
+  @media (max-width: 950px) {
+    overflow-y: visible;
+  }
+  @media (max-width: 450px) {
+    overflow-x: hidden;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  height: 900px;
+}
+
+body {
+  height: 100vh;
+  background-image: url("src/assets/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  @media (max-width: 950px) {
+    background-image: none;
+  }
+}
+#root {
+  display: flex;
+}

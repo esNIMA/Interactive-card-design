@@ -1,0 +1,97 @@
+.cards {
+  margin-top: 20rem;
+  margin-left: 19rem;
+  @media (max-width: 1350px) {
+    margin-left: 15rem;
+  }
+  @media (max-width: 1200px) {
+    margin-left: 5rem;
+  }
+  @media (max-width: 1060px) {
+    margin-left: 2rem;
+  }
+  @media (max-width: 950px) {
+    background-image: url("src/assets/images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    position: relative;
+  }
+  @media (max-width: 450px) {
+    background-image: url("src/assets/images/bg-main-mobile.png");
+    margin-left: -5rem;
+  }
+  @media (max-width: 320px) {
+    margin-left: -7rem;
+  }
+
+  &--front {
+    position: relative;
+    background-image: url("src/assets/images/bg-card-front.png");
+    width: 447px;
+    height: 245px;
+    color: $color-white;
+    margin-bottom: 5rem;
+    @media (max-width: 450px) {
+      transform: scale(0.6);
+      margin-bottom: -10rem;
+    }
+    &__image {
+      padding-top: 30px;
+      padding-left: 43px;
+    }
+    &__number {
+      padding-top: 30px;
+      padding-left: 50px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    &__name {
+      position: absolute;
+      top: 190px;
+      // padding-top: 20px;
+      padding-left: 50px;
+      font-size: 15px;
+      display: inline-block;
+    }
+    &__expire {
+      position: absolute;
+      top: 190px;
+      right: 90px;
+      font-size: 15px;
+      padding-left: 140px;
+      display: inline-block;
+    }
+    @media (max-width: 950px) {
+      margin-top: 5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &--behind {
+    width: 447px;
+    height: 245px;
+    background-image: url("src/assets/images/bg-card-back.png");
+    margin-left: 10rem;
+    @media (max-width: 1060px) {
+      margin-left: 0rem;
+    }
+    @media (max-width: 950px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 450px) {
+      transform: scale(0.6);
+      // margin-right: 30rem;
+    }
+    &__cvc {
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      color: $color-white;
+      padding-top: 110px;
+      padding-left: 350px;
+    }
+  }
+}

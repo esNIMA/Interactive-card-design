@@ -1,0 +1,27 @@
+.final {
+  margin-top: 40rem;
+  margin-left: 10rem;
+  text-align: center;
+  @media (max-width: 950px) {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &--heading {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+  &--caption {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: $color-dark-grayish-violet;
+    margin-bottom: 2rem;
+  }
+}
+.container {
+  @media (max-width: 450px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,34 @@
+.u {
+  &--flex {
+    display: flex;
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
+    @media (max-width: 530px) {
+      transform: scale(0.8);
+    }
+    @media (max-width: 450px) {
+      transform: scale(0.6);
+      height: 100%;
+    }
+  }
+  &--flex__noMQ {
+    display: flex;
+  }
+  &--margin {
+    &-bottom {
+      &__small {
+        margin-bottom: 2rem;
+      }
+      &__very-small {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &--capitalize {
+    text-transform: uppercase;
+  }
+  &--font-size {
+    font-size: 1.4rem;
+  }
+}
