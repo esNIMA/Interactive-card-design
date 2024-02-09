@@ -1,12 +1,9 @@
 {
-  "homepage": "https://esNIMA.github.io/Interactive-card-design",
   "name": "interactive-card-detail",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-page -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
