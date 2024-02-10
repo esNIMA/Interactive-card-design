@@ -14,7 +14,7 @@ export default function Cards({
       <div className="cards--front">
         <img
           className="cards--front__image"
-          src="src/assets/images/card-logo.svg
+          src="/src/assets/images/card-logo.svg
           "
           alt="card-logo"
         />

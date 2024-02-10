@@ -19,7 +19,7 @@ html {
 
 body {
   height: 100vh;
-  background-image: url("src/assets/images/bg-main-desktop.png");
+  background-image: url("/src/assets/images/bg-main-desktop.png");
   background-repeat: no-repeat;
   @media (max-width: 950px) {
     background-image: none;

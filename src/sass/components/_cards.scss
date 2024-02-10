@@ -11,7 +11,7 @@
     margin-left: 2rem;
   }
   @media (max-width: 950px) {
-    background-image: url("src/assets/images/bg-main-mobile.png");
+    background-image: url("/src/assets/images/bg-main-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0rem;
@@ -19,7 +19,7 @@
     position: relative;
   }
   @media (max-width: 450px) {
-    background-image: url("src/assets/images/bg-main-mobile.png");
+    background-image: url("/src/assets/images/bg-main-mobile.png");
     margin-left: -5rem;
   }
   @media (max-width: 320px) {
@@ -28,7 +28,7 @@
 
   &--front {
     position: relative;
-    background-image: url("src/assets/images/bg-card-front.png");
+    background-image: url("/src/assets/images/bg-card-front.png");
     width: 447px;
     height: 245px;
     color: $color-white;
@@ -72,7 +72,7 @@
   &--behind {
     width: 447px;
     height: 245px;
-    background-image: url("src/assets/images/bg-card-back.png");
+    background-image: url("/src/assets/images/bg-card-back.png");
     margin-left: 10rem;
     @media (max-width: 1060px) {
       margin-left: 0rem;
