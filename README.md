@@ -37,5 +37,5 @@ Adding redux as the state manager can be a good goal for further development.
 
 ## Author
 Nima Mahmoodian
-LinkedIn:
+-LinkedIn:www.linkedin.com/in/nima-mahmoodian
 
