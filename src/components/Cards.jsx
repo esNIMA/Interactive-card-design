@@ -12,11 +12,6 @@ export default function Cards({
   return (
     <div className="cards">
       <div className="cards--front">
-        <img
-          className="cards--front__image"
-          src="Interactive-card-design/src/assets/images/card-logo.svg"
-          alt="card-logo"
-        />
         <p className="cards--front__number">
           {cardNumber1} {cardNumber2} {cardNumber3} {cardNumber4}
         </p>
